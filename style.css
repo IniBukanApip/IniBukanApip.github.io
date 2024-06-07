@@ -123,28 +123,29 @@ h4 {
 }
 
 /* Define breakpoints for different screen sizes */
-@media only screen and (max-width: 768px) {
+/* Define breakpoints for different screen sizes */
+@media only screen and (max-width: 1920px) {
   .container {
     height: auto; /* Adjust height for smaller screens */
     padding: 20px; /* Add padding for better spacing */
   }
   .envelope-wrapper > .envelope::before {
-    border-top: 100px solid #f980a1; /* Adjust envelope flap size */
-    border-right: 120px solid transparent; /* Adjust envelope flap size */
-    border-left: 120px solid transparent; /* Adjust envelope flap size */
+    border-top: 120px solid #f980a1; /* Adjust envelope flap size */
+    border-right: 150px solid transparent; /* Adjust envelope flap size */
+    border-left: 150px solid transparent; /* Adjust envelope flap size */
   }
   .envelope-wrapper > .envelope::after {
-    border-top: 100px solid transparent; /* Adjust envelope bottom size */
-    border-right: 120px solid #fcbbcc; /* Adjust envelope bottom size */
-    border-bottom: 80px solid #fba7bd; /* Adjust envelope bottom size */
-    border-left: 120px solid #fcbbcc; /* Adjust envelope bottom size */
+    border-top: 120px solid transparent; /* Adjust envelope bottom size */
+    border-right: 150px solid #fcbbcc; /* Adjust envelope bottom size */
+    border-bottom: 100px solid #fba7bd; /* Adjust envelope bottom size */
+    border-left: 150px solid #fcbbcc; /* Adjust envelope bottom size */
   }
   .envelope > .letter {
-    right: 10%; /* Adjust letter position */
-    bottom: 10%; /* Adjust letter position */
-    width: 80%; /* Adjust letter width */
-    height: 70%; /* Adjust letter height */
-    font-size: 14px; /* Increase font size for better readability */
+    right: 15%; /* Adjust letter position */
+    bottom: 15%; /* Adjust letter position */
+    width: 70%; /* Adjust letter width */
+    height: 80%; /* Adjust letter height */
+    font-size: 16px; /* Increase font size for better readability */
   }
   .heart {
     top: 50%; /* Adjust heart button position */
@@ -152,7 +153,28 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1280px) {
+  .envelope-wrapper > .envelope::before {
+    border-top: 100px solid #f980a1; /* Further adjust envelope flap size */
+    border-right: 120px solid transparent; /* Further adjust envelope flap size */
+    border-left: 120px solid transparent; /* Further adjust envelope flap size */
+  }
+  .envelope-wrapper > .envelope::after {
+    border-top: 100px solid transparent; /* Further adjust envelope bottom size */
+    border-right: 120px solid #fcbbcc; /* Further adjust envelope bottom size */
+    border-bottom: 80px solid #fba7bd; /* Further adjust envelope bottom size */
+    border-left: 120px solid #fcbbcc; /* Further adjust envelope bottom size */
+  }
+  .envelope > .letter {
+    right: 10%; /* Further adjust letter position */
+    bottom: 10%; /* Further adjust letter position */
+    width: 80%; /* Further adjust letter width */
+    height: 70%; /* Further adjust letter height */
+    font-size: 14px; /* Further increase font size */
+  }
+}
+
+@media only screen and (max-width: 960px) {
   .envelope-wrapper > .envelope::before {
     border-top: 80px solid #f980a1; /* Further adjust envelope flap size */
     border-right: 90px solid transparent; /* Further adjust envelope flap size */

@@ -122,6 +122,43 @@ h4 {
   font-family: Solitreo;
 }
 
-@media screen and (max-width: 768px) {
-  /* Aturan gaya untuk perangkat seluler */
+@media only screen and (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .envelope-wrapper {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .envelope {
+    width: 100%;
+    height: auto;
+  }
+
+  .envelope::before {
+    border-top: 100px solid #f980a1; /* Adjust height */
+    border-right: 120px solid transparent; /* Adjust width */
+    border-left: 120px solid transparent; /* Adjust width */
+  }
+
+  .envelope::after {
+    border-top: 100px solid transparent; /* Adjust height */
+    border-right: 120px solid #fcbbcc; /* Adjust width */
+    border-bottom: 80px solid #fba7bd; /* Adjust height */
+    border-left: 120px solid #fcbbcc; /* Adjust width */
+  }
+
+  .envelope > .letter {
+    width: 80%;
+    right: 10%;
+    bottom: 10%;
+  }
+
+  .heart {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
 }

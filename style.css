@@ -122,43 +122,53 @@ h4 {
   font-family: Solitreo;
 }
 
+/* Define breakpoints for different screen sizes */
 @media only screen and (max-width: 768px) {
   .container {
-    height: auto;
-    padding: 20px;
+    height: auto; /* Adjust height for smaller screens */
+    padding: 20px; /* Add padding for better spacing */
   }
-
-  .envelope-wrapper {
-    width: 90%;
-    max-width: 320px;
+  .envelope-wrapper > .envelope::before {
+    border-top: 100px solid #f980a1; /* Adjust envelope flap size */
+    border-right: 120px solid transparent; /* Adjust envelope flap size */
+    border-left: 120px solid transparent; /* Adjust envelope flap size */
   }
-
-  .envelope {
-    width: 100%;
-    height: auto;
+  .envelope-wrapper > .envelope::after {
+    border-top: 100px solid transparent; /* Adjust envelope bottom size */
+    border-right: 120px solid #fcbbcc; /* Adjust envelope bottom size */
+    border-bottom: 80px solid #fba7bd; /* Adjust envelope bottom size */
+    border-left: 120px solid #fcbbcc; /* Adjust envelope bottom size */
   }
-
-  .envelope::before {
-    border-top: 100px solid #f980a1; /* Adjust height */
-    border-right: 120px solid transparent; /* Adjust width */
-    border-left: 120px solid transparent; /* Adjust width */
-  }
-
-  .envelope::after {
-    border-top: 100px solid transparent; /* Adjust height */
-    border-right: 120px solid #fcbbcc; /* Adjust width */
-    border-bottom: 80px solid #fba7bd; /* Adjust height */
-    border-left: 120px solid #fcbbcc; /* Adjust width */
-  }
-
   .envelope > .letter {
-    width: 80%;
-    right: 10%;
-    bottom: 10%;
+    right: 10%; /* Adjust letter position */
+    bottom: 10%; /* Adjust letter position */
+    width: 80%; /* Adjust letter width */
+    height: 70%; /* Adjust letter height */
+    font-size: 14px; /* Increase font size for better readability */
   }
-
   .heart {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
+    top: 50%; /* Adjust heart button position */
+    transform: translate(-50%, -50%) rotate(45deg); /* Adjust heart button position */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .envelope-wrapper > .envelope::before {
+    border-top: 80px solid #f980a1; /* Further adjust envelope flap size */
+    border-right: 90px solid transparent; /* Further adjust envelope flap size */
+    border-left: 90px solid transparent; /* Further adjust envelope flap size */
+  }
+  .envelope-wrapper > .envelope::after {
+    border-top: 80px solid transparent; /* Further adjust envelope bottom size */
+    border-right: 90px solid #fcbbcc; /* Further adjust envelope bottom size */
+    border-bottom: 60px solid #fba7bd; /* Further adjust envelope bottom size */
+    border-left: 90px solid #fcbbcc; /* Further adjust envelope bottom size */
+  }
+  .envelope > .letter {
+    right: 5%; /* Further adjust letter position */
+    bottom: 5%; /* Further adjust letter position */
+    width: 90%; /* Further adjust letter width */
+    height: 60%; /* Further adjust letter height */
+    font-size: 12px; /* Further increase font size */
   }
 }

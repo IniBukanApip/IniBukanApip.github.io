@@ -67,7 +67,7 @@ body{
 }
 
 .envelope > .letter > .text {
-  font-family: "Pangolin", calibri;
+  font-family: Pangolin;
   color: var(--txt-color);
   text-align: left;
   font-size: 7px;

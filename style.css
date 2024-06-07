@@ -121,3 +121,13 @@ h3 {
 h4 {
   font-family: Solitreo;
 }
+
+@media (max-width: 768px) {
+    /* Styles for tablets and smaller devices */
+    /* Adjust layout, font sizes, etc. */
+}
+
+@media (max-width: 576px) {
+    /* Styles for mobile devices */
+    /* Further adjustments for smaller screens */
+}
